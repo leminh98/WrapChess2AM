@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WrapChess.iml" filepath="$PROJECT_DIR$/WrapChess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WrapChess2AM.iml" filepath="$PROJECT_DIR$/WrapChess2AM.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
