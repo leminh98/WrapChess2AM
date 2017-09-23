@@ -6,10 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fd2caab-b198-4240-9361-1c98d818cb48" name="Default" comment="Imports and initializing extention of AppCompatActivity (temp. bug in abstract onClickListener)">
+    <list default="true" id="9fd2caab-b198-4240-9361-1c98d818cb48" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
     </list>
     <ignored path="WrapChess.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2211,7 +2209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506138929486</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Imports and initializing extention of AppCompatActivity (temp. bug in abstract onClickListener)">
+      <created>1506188805568</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1506188805568</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
