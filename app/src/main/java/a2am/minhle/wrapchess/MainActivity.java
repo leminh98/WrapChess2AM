@@ -1,5 +1,9 @@
 package a2am.minhle.wrapchess;
-
+/*
+    Created by Ariel Feldman
+    9/23/17
+    For HackRice
+ */
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.media.Image;
@@ -23,10 +27,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         //getting the button
-        //buttonPlay = (ImageButton) findViewById(R.id.buttonPlay);
+        buttonPlay = (ImageButton) findViewById(R.id.buttonPlay);
 
         //adding a click listener
-        //buttonPlay.setOnClickListener(this);
+        buttonPlay.setOnClickListener(this);
+    }
 
+    @Override
+    protected void onCreate(View v) {
+
+        //starting game activity
+        startActivity(new Intent (this, GameActivity.class));
     }
 }
