@@ -9,8 +9,8 @@ import android.view.SurfaceView;
 
 public class GameView  extends SurfaceView implements Runnable {
 
-    //boolean variable to track if the game is playing or not
-    volatile boolean playing;
+    //boolean variable to track if player 1 has moved a piece or not
+    volatile boolean movemade;
 
     //the game thread
     private Thread gameThread = null;
@@ -24,7 +24,6 @@ public class GameView  extends SurfaceView implements Runnable {
 
     @Override
     public void run() {
-        while (playing){
 
         //update frame
             update();
@@ -34,7 +33,6 @@ public class GameView  extends SurfaceView implements Runnable {
 
         //to control
             control();
-        }
     }
 
     private void update() {
@@ -53,10 +51,9 @@ public class GameView  extends SurfaceView implements Runnable {
         }
     }
 
-    public void pause() {
-    //when the game is paused
-    //setting the variable to false
-        playing = false;
+    public void wait() {
+    //when waiting for player 2
+        movemade = true;
         try{
         //stopping the thread
             gameThread.join();
@@ -65,10 +62,10 @@ public class GameView  extends SurfaceView implements Runnable {
         }
     }
 
-    public void resume(){
-        //when the game is resumed
+    public void nextmove(){
+        //when player 2 makes a move, and thus player 1 may move again
         //starting the thread again
-        playing = true;
+        movemade = false;
         gameThread = new Thread(this);
         gameThread.start();
     }
