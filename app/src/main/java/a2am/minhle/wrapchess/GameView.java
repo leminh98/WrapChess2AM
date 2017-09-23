@@ -51,7 +51,7 @@ public class GameView  extends SurfaceView implements Runnable {
         }
     }
 
-    public void wait() {
+    public void waiting() {
     //when waiting for player 2
         movemade = true;
         try{
