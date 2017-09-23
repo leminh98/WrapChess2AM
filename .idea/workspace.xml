@@ -68,8 +68,8 @@
       <file leaf-file-name="GameView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="251">
+              <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2445,7 +2445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506193210513</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed wait -&gt; waiting; implicit function for wait">
+      <created>1506194782021</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1506194782021</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2499,7 +2506,8 @@
     <MESSAGE value="updated whitespace" />
     <MESSAGE value="Sample gameview: will be updated to chess view soon" />
     <MESSAGE value="Gameview for local player 1 and remote player 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gameview for local player 1 and remote player 2" />
+    <MESSAGE value="Fixed wait -&gt; waiting; implicit function for wait" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed wait -&gt; waiting; implicit function for wait" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2635,8 +2643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        <state relative-caret-position="251">
+          <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

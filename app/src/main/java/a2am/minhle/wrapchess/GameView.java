@@ -36,15 +36,17 @@ public class GameView  extends SurfaceView implements Runnable {
     }
 
     private void update() {
-
+        //Update the coordinate of our characters
     }
 
     private void draw(){
-
+        //draw the characters to the canvas
     }
 
     private void control() {
+    //Control frames per second drawn
         try {
+        //delaying thread causes frame rate to be ~60 fps
             gameThread.sleep(17);
         } catch (InterruptedException e){
             e.printStackTrace();
