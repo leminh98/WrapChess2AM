@@ -6,11 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fd2caab-b198-4240-9361-1c98d818cb48" name="Default" comment="New activity GameActivity created: allow controller to access information from player">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
+    <list default="true" id="9fd2caab-b198-4240-9361-1c98d818cb48" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/MainActivity.java" />
     </list>
     <ignored path="WrapChess.iws" />
@@ -59,8 +56,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-73">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="302">
+              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2406,7 +2403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506140328603</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New activity GameActivity created: allow controller to access information from player">
+      <created>1506189813858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1506189813858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2583,8 +2587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="302">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

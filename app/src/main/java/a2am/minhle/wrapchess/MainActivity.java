@@ -37,6 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(View v) {
 
         //starting game activity
-        startActivity(new Intent (this, GameActivity.class));
+        startActivity(new Intent(this, GameActivity.class));
     }
 }
