@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9fd2caab-b198-4240-9361-1c98d818cb48" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameView.java" afterPath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameActivity.java" />
     </list>
     <ignored path="WrapChess.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameView.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
@@ -90,12 +90,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="475">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1987,6 +1989,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/ChessEngine.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameActivity.java" />
       </list>
     </option>
   </component>
@@ -2452,7 +2455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506194782021</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Clearer comments">
+      <created>1506195417497</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1506195417497</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2507,7 +2517,8 @@
     <MESSAGE value="Sample gameview: will be updated to chess view soon" />
     <MESSAGE value="Gameview for local player 1 and remote player 2" />
     <MESSAGE value="Fixed wait -&gt; waiting; implicit function for wait" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed wait -&gt; waiting; implicit function for wait" />
+    <MESSAGE value="Clearer comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clearer comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2623,14 +2634,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -2645,6 +2648,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/a2am/minhle/wrapchess/GameActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
