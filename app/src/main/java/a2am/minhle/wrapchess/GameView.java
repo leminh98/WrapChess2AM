@@ -89,7 +89,6 @@ public class GameView  extends SurfaceView implements Runnable {
         //stopping the thread
             gameThread.join();
         } catch(InterruptedException e){
-
         }
     }
 
