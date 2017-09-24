@@ -3,6 +3,7 @@ package a2am.minhle.wrapchess;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.view.MotionEvent;
 import android.view.SurfaceView;
 
 /**
@@ -98,5 +99,23 @@ public class GameView  extends SurfaceView implements Runnable {
         movemade = false;
         gameThread = new Thread(this);
         gameThread.start();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent motionEvent){
+        switch (motionEvent.getAction() & MotionEvent.ACTION_MASK){
+            case MotionEvent.ACTION_UP:
+                //do following when user presses screen
+                //want to call all possible paths for one touch
+                //want to move piece when double tapped
+
+                break;
+            case MotionEvent.ACTION_DOWN:
+                //do following when user releases screen
+                //want to either display possible paths or move a piece
+
+                break;
+        }
+        return true;
     }
 }
