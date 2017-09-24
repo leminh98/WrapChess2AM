@@ -20,6 +20,13 @@ public class ChessEngine {
     //C means Capital, L means Lower, represent by number from 0 to 63 according to the board.
     static int kingPositionC, kingPositionL;
 
+    public static void main(String[] args) {
+
+        System.out.println(possibleMoves());
+
+    }
+
+
     public static String possibleMoves () {
         //String format will be: x1 y1 x2 y2 capturePiece
         //x is the verticle, from top to bottom = 0 -> 7
@@ -77,12 +84,27 @@ public class ChessEngine {
         // 6 7 8
         for (int pos = 0; pos < 9; pos++ ) {
             if (pos != 4) {
-                 if(Character.isLowerCase(chessBoard[row - 1 + pos/3][col -1 + pos%3].charAt(0)) || chessBoard[row - 1 + pos/3][col -1 + pos%3].equals(" ")) {
+                 if(Character.isLowerCase(chessBoard[row - 1 + pos/3][col -1 + pos%3].charAt(0)) ||
+                         chessBoard[row - 1 + pos/3][col -1 + pos%3].equals(" ")) {
                      oldPiece = chessBoard[row - 1 + pos/3][col -1 + pos%3];
+                     chessBoard[row][col] = " ";
+                     chessBoard[row -1 + pos/3][col - 1 + pos % 3] = "K";
+
+                     if (kingSafe()) {
+                         list = list + col + row + (col - 1 + pos % 3) + (row - 1 + pos / 3) + oldPiece;
+                     }
+
+                     chessBoard[row][col] = " ";
+                     chessBoard[row - 1 + pos / 3][col - 1 + pos % 3] = oldPiece;
+
                  }
             }
         }
         return list;
+    }
+
+    private static boolean kingSafe() {
+        return true;
     }
 }
 
