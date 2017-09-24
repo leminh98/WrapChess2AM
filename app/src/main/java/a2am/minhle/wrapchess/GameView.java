@@ -1,6 +1,9 @@
 package a2am.minhle.wrapchess;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.view.MotionEvent;
 import android.view.SurfaceView;
 
 /**
@@ -15,32 +18,59 @@ public class GameView  extends SurfaceView implements Runnable {
     //the game thread
     private Thread gameThread = null;
 
+    //adding the piece to the class
+    private Piece piece;
+
+    //objects to be drawn
+    private Paint paint;
+    private android.graphics.Canvas canvas;
+    private android.view.SurfaceHolder surfaceHolder;
 
     //Class constructor
     public GameView(Context context) {
         super(context);
 
+        //initializing piece object
+        piece = new Piece(context);
+
+        //initializing drawing objects
+        surfaceHolder = getHolder();
+        paint = new Paint();
     }
 
     @Override
     public void run() {
+    //update frame
+        update();
 
-        //update frame
-            update();
+    //to draw the frame
+        draw();
 
-        //to draw the frame
-            draw();
-
-        //to control
-            control();
+    //to control
+        control();
     }
 
     private void update() {
         //Update the coordinate of our characters
+        piece.update();
     }
 
     private void draw(){
         //draw the characters to the canvas
+        //first check if surface is valid
+        if (surfaceHolder.getSurface().isValid()){
+            //lock the canvas
+            canvas = surfaceHolder.lockCanvas();
+
+            //draw a background color for canvas
+            canvas.drawColor(Color.BLACK);
+
+            //draw the piece
+            canvas.drawBitmap(piece.getBitmap(), piece.getX(), piece.getY(), paint);
+
+            //unlock the canvas
+            surfaceHolder.unlockCanvasAndPost(canvas);
+        }
     }
 
     private void control() {
@@ -60,7 +90,6 @@ public class GameView  extends SurfaceView implements Runnable {
         //stopping the thread
             gameThread.join();
         } catch(InterruptedException e){
-
         }
     }
 
@@ -70,5 +99,23 @@ public class GameView  extends SurfaceView implements Runnable {
         movemade = false;
         gameThread = new Thread(this);
         gameThread.start();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent motionEvent){
+        switch (motionEvent.getAction() & MotionEvent.ACTION_MASK){
+            case MotionEvent.ACTION_UP:
+                //do following when user presses screen
+                //want to call all possible paths for one touch
+                //want to move piece when double tapped
+
+                break;
+            case MotionEvent.ACTION_DOWN:
+                //do following when user releases screen
+                //want to either display possible paths or move a piece
+
+                break;
+        }
+        return true;
     }
 }

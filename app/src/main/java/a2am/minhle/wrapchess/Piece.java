@@ -16,6 +16,14 @@ public class Piece {
     private int x;
     private int y;
 
+    //boolean variable to determine whether or not piece shall be moved
+    private boolean finalmove;
+
+    //apply a parameter to Y coordinate such that piece cannot move off board
+    private int maxY;
+    private int minY;
+
+
     //constructor
     public Piece(Context context){
         x = 75;
